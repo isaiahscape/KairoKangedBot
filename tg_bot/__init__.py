@@ -24,9 +24,9 @@ fileConfig('logging.ini')
 
 log = logging.getLogger('[Enterprise]')
 logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLevel(logging.WARNING)
-log.info("[KIGYO] Kigyo is starting. | An Eagle Union Project. | Licensed under GPLv3.")
+log.info("[KIGYO] KairoBot is starting. | A kanged bot. | Licensed under GPLv3.")
 log.info("[KIGYO] Not affiliated to Azur Lane or Yostar in any way whatsoever.")
-log.info("[KIGYO] Project maintained by: github.com/Dank-del (t.me/dank_as_fuck)")
+log.info("[KIGYO] Project maintained by: github.com/HiHelloIII (t.me/Kairosmth)")
 
 # if version < 3.6, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 7:
@@ -37,7 +37,7 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 7:
 
 parser = ConfigParser()
 parser.read("config.ini")
-kigconfig = parser["kigconfig"]
+kigconfig = parser["kaiconfig"]
 
 class KigyoINIT:
     def __init__(self, parser):
@@ -72,8 +72,8 @@ class KigyoINIT:
         self.LASTFM_API_KEY = self.parser.get('LASTFM_API_KEY', None)
         self.CF_API_KEY =  self.parser.get("CF_API_KEY", None)
         self.bot_id = 0 #placeholder
-        self.bot_name = "Kigyo" #placeholder
-        self.bot_username = "KigyoRobot" #placeholder
+        self.bot_name = "Kairo's Son" #placeholder
+        self.bot_username = "HiatusCBot" #placeholder
 
 
     def init_sw(self):
